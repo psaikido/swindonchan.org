@@ -4,8 +4,8 @@ title: home
 
 <div align="center"><img title="Shakyamuni" src="/images/head.gif" alt="" /></div>
 <div align="center"> </div>
-<p align="center"><a href="/docs/welcomePack1.rtf" target="_blank">download our welcome pack</a></p>
-<p align="center"><a href="https://carrollonline.uk/index.php/dharma/mindfulness-cd.html" target="_blank">Meditation CD</a></p>
+<p align="center"><a href="/media/welcomePack1.rtf" target="_blank">download our welcome pack</a></p>
+<p align="center"><a href="https://hugle.uk/shop" target="_blank">Meditation CD</a></p>
 <div align="center"><img src="/images/prflags.gif" alt="" width="220" height="50" /></div>
 
 

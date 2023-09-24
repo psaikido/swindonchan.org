@@ -1,19 +1,21 @@
-$dark-grey: #555559;
-$light-grey: #dadada;
-$blue: #157dff;
-$pink: #d33682;
-$black: #333333;
-$white: #ffffff;
-$green: #39d24a;
-$yellow: #ffe244;
-$pink: #ff36a3;
+:root {
+	--white: #ffffff;
+	--off-white: #bbbbbb;
+	--silver: #C0B7B0;
+	--blue: #157dff;
+  --mid-grey: #555559;
+  --dark-grey: #555559;
+	--coal: #3333EE;
+	--black: #333333;
+}
 
-$bkg: $dark-grey;
-$hilight: #C0B7B0;
-$hilight-dark: $black;
-$text-light: #cdc8c8;
-$text-dark: $black;
-$text-mute: #3333EE;
-$text-link: #ada8a8;
-$border-light: #586e75;
-$border-dark: $dark-grey;
+html {
+	--bkg-major: var(--dark-grey);
+	--bkg-reverse: var(--white);
+	--hilight: var(--silver);
+	--text-major: var(--black);
+	--text-mute: var(--coal);
+	--border-major: var(--black);
+	--border-minor: var(--off-white);
+	--border-mid: var(--mid-grey);
+}

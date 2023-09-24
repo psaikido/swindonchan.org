@@ -9,7 +9,7 @@ layout: default
 
 John Crook's 12 [aspirational prayers](http://www.westernchanfellowship.org/aspirational-prayer.html) are given below. There are 12 sets of 9 in the 108 beads. A practice has developed around this that uses chanting and visualisation together with the 12 aspirations. It is deliberately complex as it requires concentration to do and so pushes other activity out of the mind while being practised.
 
-Holding the guru bead, take refuge then chant [om mani padme hum](http://carrollonline.uk/pages/pix/mani.html) 9 times counting 9 beads ending up at a jade bead. At each recitation and bead, visualise as follows:
+Holding the guru bead, take refuge then chant 'om mani padme hum' 9 times counting 9 beads ending up at a jade bead. At each recitation and bead, visualise as follows:
 
 1 see strong white light streaming from the deities' forehead (Chenrezig, the Buddha, Jesus, a beautiful light, Tara..). This purifies body.  
 2 red light streaming from the deities' throat . This purifies speech.  

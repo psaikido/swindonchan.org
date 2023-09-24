@@ -1,7 +1,7 @@
 menu:
 
     - title: home
-      url: /index/
+      url: /
 
     - title: where
       url: /pages/where/
@@ -15,10 +15,10 @@ menu:
     - title: why...
       sub: 
         - title: teachings from John Crook 1 
-          url: /pages/teachingsJC1/
+          url: /pages/teachingsjc1/
 
         - title: teachings from John Crook 2 
-          url: /pages/teachingsJC2/
+          url: /pages/teachingsjc2/
 
         - title: Master Sheng-yen lecture
           url: /pages/sheng-yen-lecture/

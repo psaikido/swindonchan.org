@@ -8,4 +8,4 @@ The Friend's Meeting House
 SN1 3JF  
 Swindon - Wiltshire
 
-[streetmap.co.uk](http://www.streetmap.co.uk/newmap.srf?x=415154&amp;y=184217&amp;z=0&amp;sv=SN1+3JF&amp;st=2&amp;pc=SN1+3JF&amp;mapp=newmap.srf&amp;searchp=newsearch.srf") 
+[streetmap.co.uk](http://www.streetmap.co.uk/map?x=415163&y=184224&z=0&sv=sn1+3jf&st=2&pc=SN1+3JF&mapp=map&searchp=ids) 

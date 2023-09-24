@@ -1,150 +1,128 @@
 body, table {
-    background-color: $bkg;
-    font-family: verdana,arial,Kalimati,sans-serif;
-    font-size: 12px;
-    font-weight: bold;
-    text-align: center;
+	background-color: var(--bkg-major);
+	font-family: verdana,arial,Kalimati,sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	text-align: center;
 }
 
 #outer {
-    position: relative;
-    margin: 10px auto;
-    max-width: 630px;
+	position: relative;
+	margin: 10px auto;
+	max-width: 630px;
 
-    #header {
-        background: url(/images/headerBack.gif) no-repeat scroll center top transparent;
-        height: 131px;
-        position: relative;
+	#header {
+		background: url(/images/headerBack.gif) no-repeat scroll center top transparent;
+		height: 131px;
+		position: relative;
 
-        #headerContent {
-            color: $hilight;
-            font-size: 14px;
-            left: 70px;
-            letter-spacing: 7px;
-            padding: 5px;
-            position: relative;
-            text-align: center;
-            top: 30px;
-        }
-    }
+		#headerContent {
+			color: var(--hilight);
+			font-size: 14px;
+			left: 70px;
+			letter-spacing: 7px;
+			padding: 5px;
+			position: relative;
+			text-align: center;
+			top: 30px;
+		}
+	}
 
-    #mainContent {
-        border: 1px solid #333333;
-        color: #333333;
-        height: auto;
-        min-height: 351px;
-        position: absolute;
-        text-align: left;
-        top: 100px;
-        left: 150px;
-        width: 420px;
-        padding:30px;
-        z-index:0;
+	#mainContent {
+		border: 1px solid var(--border-major);
+		color: var(--text-major);
+		height: auto;
+		min-height: 351px;
+		position: absolute;
+		text-align: left;
+		top: 100px;
+		left: 150px;
+		width: 420px;
+		padding:30px;
+		z-index:0;
 
-        a:visited {
-            color: $text-mute;
-        }
+		a:visited {
+			color: var(--text-mute);
+		}
 
-        ul {
-            list-style-type:square;
+		ul {
+			list-style-type:square;
 
-            li {
-                line-height: 40px;
-            }
-        }
-    }
+			li {
+				line-height: 40px;
+			}
+		}
+	}
 }
 
 #footer {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    text-align: left;
-    background: rgba(220, 220, 220, .8);
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	text-align: left;
+	background: rgba(220, 220, 220, .8);
 
-    #footer-text {
-        float: right;
-        margin-right: 20px;
-        color: $text-mute;
-    }
+	#footer-text {
+		float: right;
+		margin-right: 20px;
+		color: var(--text-mute);
+	}
 }
 
 #contactForm {
-    text-align: left;
+	text-align: left;
 
-    h4 {
-        margin-bottom: 3px;
-    }
+	h4 {
+		margin-bottom: 3px;
+	}
 }
 
 #mainContent, #mainContent table {
-    background: url(/images/clouds.jpg) repeat scroll 0 0 transparent;
+	background: url(/images/clouds.jpg) repeat scroll 0 0 transparent;
 }
 
 .scriptMessage, .scriptMessage a {
-    color: #C0B7B0;
-    text-align: left;
+	color: var(--hilight);
+	text-align: left;
 }
 
 .linkback {
-    border-bottom: 1px solid #BBBBBB;
-    font-size: 9px;
-    font-style: italic;
-    padding-bottom: 5px;
+	border-bottom: 1px solid var(--border-minor);
+	font-size: 9px;
+	font-style: italic;
+	padding-bottom: 5px;
 }
 
 #lastUpdated {
-    color: #333333;
-    font-size: 9px;
-    font-style: italic;
-    text-align: left;
+	color: var(--text-major);
+	font-size: 9px;
+	font-style: italic;
+	text-align: left;
 }
 
-/*admin*/
-#adminWrap {
-    min-height:420px;
-    padding:10px;
-}
-.admin {
-    margin-top:10px;
-}
-#adminWrap,
-.admin,
-.admin table {
-    background-color:#aaa;
-}
-.admin form {
-    text-align: left;
-}
-.admin input {
-    border:1px solid #555;
-}
-.admin td {
-    text-align:left;
-}
-.admin td a.arrow {
-    margin:auto;
-}
 .randomQuote {
-    width:66%;
-    margin:20px auto;
-    padding:20px;
-    border:1px solid #999;
-    line-height:25px;
+	width:66%;
+	margin:20px auto;
+	padding:20px;
+	border:1px solid #999;
+	line-height:25px;
 }
+
 .randomQuote .author {
-    text-align:right;
-    font-size:9px;
-    font-style:italic;
+	text-align:right;
+	font-size:9px;
+	font-style:italic;
 }
+
 #library table {
-    background-color:#fff;
+	background-color: var(--bkg-reverse);
 }
+
 #library table td {
-    text-align:left;
-    border:1px solid #999;
-    font-weight:normal;
-    vertical-align:top;
-    padding:5px;
+	text-align:left;
+	border:1px solid var(--border-mid);
+	font-weight:normal;
+	vertical-align:top;
+	padding:5px;
 }
 
