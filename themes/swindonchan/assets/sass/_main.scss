@@ -1,7 +1,7 @@
 body, table {
 	background-color: var(--bkg-major);
 	font-family: verdana,arial,Kalimati,sans-serif;
-	font-size: 12px;
+	font-size: medium;
 	font-weight: bold;
 	text-align: center;
 }
@@ -18,7 +18,7 @@ body, table {
 
 		#headerContent {
 			color: var(--hilight);
-			font-size: 14px;
+			font-size: 1.5em;
 			left: 70px;
 			letter-spacing: 7px;
 			padding: 5px;
@@ -53,6 +53,10 @@ body, table {
 			}
 		}
 	}
+
+	#mainContent, #mainContent table {
+		background: url(/images/clouds.jpg) repeat scroll 0 0 transparent;
+	}
 }
 
 #footer {
@@ -75,10 +79,6 @@ body, table {
 	h4 {
 		margin-bottom: 3px;
 	}
-}
-
-#mainContent, #mainContent table {
-	background: url(/images/clouds.jpg) repeat scroll 0 0 transparent;
 }
 
 .scriptMessage, .scriptMessage a {

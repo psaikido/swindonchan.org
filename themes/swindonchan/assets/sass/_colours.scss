@@ -1,9 +1,8 @@
 :root {
-	--white: #ffffff;
+	--white: #eeeeee;
 	--off-white: #bbbbbb;
 	--silver: #C0B7B0;
 	--blue: #157dff;
-  --mid-grey: #555559;
   --dark-grey: #555559;
 	--coal: #3333EE;
 	--black: #333333;
@@ -15,7 +14,8 @@ html {
 	--hilight: var(--silver);
 	--text-major: var(--black);
 	--text-mute: var(--coal);
+	--menu-link: var(--white);
 	--border-major: var(--black);
 	--border-minor: var(--off-white);
-	--border-mid: var(--mid-grey);
+	--border-mid: var(--dark-grey);
 }
