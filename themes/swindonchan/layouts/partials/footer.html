@@ -1,0 +1,15 @@
+<footer class="footer">
+	<form id="themeForm">
+		<fieldset>
+			<legend>themes: </legend>
+
+			<input type="radio" id="themeLight" name="themeRadio" value="light" checked />
+			<label for="themeLight">light</label>
+
+			<input type="radio" id="themeDark" name="themeRadio" value="dark" />
+			<label for="themeDark">dark</label>
+		</fieldset>
+	</form>
+
+	&copy;{{ .Site.Params.year }} {{ .Site.Params.name }}
+</footer>

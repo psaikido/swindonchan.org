@@ -1,0 +1,19 @@
+baseURL:  'http://localhost:1313/'
+languageCode: 'en-gb'
+theme: "swindonchan"
+
+enableRobotsTXT: true
+
+Params:
+  name: "hughie [at] hugle.uk"
+  year: "2023"
+  title: "Swindon Chan Group"
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+    parser:
+      attribute:
+        block: true
+

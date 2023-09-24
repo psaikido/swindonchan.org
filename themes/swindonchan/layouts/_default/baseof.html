@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" class="">
+    {{ partial "head.html" . }}
+
+		<body>
+			<div id="outer">
+				<div id="header">
+					<div id="headerContent">{{ .Site.Params.title }}</div>
+				</div>
+
+				<div id="menu">
+					{{ partial "nav.html" . }}
+				</div>
+
+				<div id="mainContent">
+					{{ block "main" . }}
+					{{ end }}
+				</div>
+			</div>
+
+		</body>
+</html>

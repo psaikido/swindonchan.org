@@ -1,0 +1,52 @@
+$breakpoints: (
+    'xsmall': ( max-width: 598px ),
+    'small': ( min-width: 600px ),
+    'medium': ( min-width: 900px ),
+    'large': ( min-width: 1200px ),
+    'desktop': ( min-width: 1400px )
+) !default;
+
+@mixin screen-width($breakpoint) {
+    @if map_has_key($breakpoints, $breakpoint) {
+        @media only screen and #{inspect(map-get($breakpoints, $breakpoint))} {
+            @content;
+        }
+    }
+}
+
+@mixin border-fancy() {
+    border-bottom: 1px solid transparent;
+    border-image: linear-gradient(to right, var(--bkg-main), var(--blue), var(--bkg-main));
+    border-image-slice: 1;
+}
+
+@mixin border-fancy-top() {
+    border-top: 1px solid transparent;
+    border-image: linear-gradient(to right, var(--bkg-main), var(--blue), var(--bkg-main));
+    border-image-slice: 1;
+}
+
+/*
+html body {
+    @include screen-width('xsmall') {
+        background-color: white;
+    }
+
+    @include screen-width('small') {
+        background-color: green;
+        margin-inline: auto;
+    }
+
+    @include screen-width('medium') {
+        background-color: blue;
+    }
+
+    @include screen-width('large') {
+        background-color: pink;
+    }
+
+    @include screen-width('desktop') {
+        background-color: limegreen;
+    }
+}
+*/

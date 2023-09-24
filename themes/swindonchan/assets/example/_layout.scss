@@ -1,0 +1,89 @@
+body {
+	width: 99vw;
+	margin-inline: auto;
+	overflow-x: hidden;
+	padding: 10px;
+}
+
+.grid-wrap {
+	display: grid;
+	justify-content: center;
+	margin-inline: auto;
+	padding: 20px 10px 10px;
+	grid-gap: 10px;
+	grid-template-columns: 1fr;
+	grid-template-rows: repeat(3, auto);
+	grid-template-areas: 
+		'header'
+		'nav'
+		'main';
+
+	header {
+		grid-area: header;
+		margin-top: 15px;
+		margin-bottom: 15px;
+	}
+
+	nav {
+		grid-area: nav;
+	}
+
+	main {
+		grid-area: main;
+
+		@include screen-width('medium') {
+			.two-cols {
+				display: grid;
+				grid-template-rows: auto;
+				grid-template-columns: 1fr 1fr;
+				grid-template-areas: "left right";
+
+				.col-left {
+					grid-area: left;
+					padding-right: 20px;
+				}
+
+				.col-right {
+					grid-area: right;
+				}
+			}
+		}
+	}
+
+	@include screen-width('medium') {
+		margin: 0 auto;
+		grid-template-rows: auto;
+		grid-template-columns: 
+		minmax(210px, 300px) 
+		minmax(600px, 900px);
+		grid-template-areas: 
+		"header nav"
+		"main main";
+
+		nav {
+			margin-top: 14px;
+		}
+	}
+
+	@include screen-width('desktop') {
+		heading {
+			grid-area: header;
+		}
+
+		main {
+			margin: 0 auto;
+			width: 100%;
+			height: auto;
+			min-height: 84vh;
+			padding-top: 30px;
+			padding-bottom: 10px;
+		}
+
+		footer {
+			grid-area: footer;
+			bottom: 0;
+			width: 100%;
+		}
+	}
+}
+

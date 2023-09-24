@@ -1,0 +1,100 @@
+nav {
+	button {
+		border: none;
+		background-color: var(--bkg-minor);
+		margin-top: -100px;
+
+		.navbar-toggler-icon {
+			display: block;
+			width: 2em;
+			height: 3px;
+			vertical-align: middle;
+			content: "";
+			background: no-repeat center center;
+			background-size: 100% 100%;
+			background-color: var(--text-major);
+			margin: 5px auto;
+		}
+
+		@include screen-width('medium') {
+			display: none;
+		}
+	}
+
+	ul#primary-nav {
+		display: none;
+		margin-top: -37px;
+		margin-left: 34px;
+
+
+		@include screen-width('medium') {
+			display: block;
+			margin: 0;
+		}
+
+		li {
+			position: relative;
+			height: 35px;
+			line-height: 35px;
+			padding: 3px;
+			white-space: nowrap;
+
+			@include screen-width('medium') {
+				float: left;
+				padding: 0 20px 0 20px;
+				border-right: 1px solid var(--border-major);
+			}
+		}
+
+		li.menuactive a {
+			text-decoration: underline;
+		}
+
+		li.menuparent ul {
+			display: none;
+			position: absolute;
+			top: 0;
+			left: 70px;
+			z-index: 1;
+			background-color: var(--bkg-minor);
+
+			@include screen-width('medium') {
+				top: 35px;
+				left: -39px;
+
+				li {
+					float: left;
+					border: none;
+				}
+			}
+		}
+
+		li.menuparent:hover ul {
+			display: block;
+		}
+	}
+
+	ul {
+		list-style: none;
+	}
+
+	li {
+		color: var(--text-link);
+
+		a {
+			font-size: 17px;
+			font-weight: bold;
+		}
+
+	}
+
+	li a:link,
+	li a:visited {
+		color: var(--text-link);
+		text-decoration: none;
+	}
+
+	li:hover {
+		text-decoration: underline;
+	}
+}

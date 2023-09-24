@@ -1,0 +1,33 @@
+#cookie-notice {
+    padding: 0.5rem 1rem;
+    margin: 0;
+    display: none;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    background: $blue;
+    color: $black;
+
+    a {
+        display: inline-block;
+        cursor: pointer;
+        margin-left: 0.5rem;
+        color: $hilight;
+    }
+}
+
+
+#cookie-info {
+    display: none;
+    float: left;
+    margin-left: 10px;
+
+    a {
+        color: $text-mute;
+    }
+}
+
+@media (max-width: 767px) {
+    #cookie-notice span {display: block; padding-top: 3px; margin-bottom: 1rem;}
+    #cookie-notice a {position: relative; bottom: 4px;}
+}

@@ -1,0 +1,36 @@
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+html {
+	scroll-behavior: smooth;
+} 
+
+body {
+	background: var(--bkg-major);
+	color: var(--text-minor);
+	font-size: 16px;
+	font-family: Georgia, verdana, kalimati, helvetica, serif;
+	line-height: 30px;
+}
+
+a, a:link, a:visited, a:hover {
+	color: var(--text-link);
+	letter-spacing: 2px;
+}
+
+a:hover {
+	color: var(--hilight);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	color: var(--hilight);
+	margin-top: 0;
+}

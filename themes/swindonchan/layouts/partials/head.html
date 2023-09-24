@@ -1,0 +1,24 @@
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <meta name="description" content="{{ .Site.Params.description }}">
+    <meta http-equiv='cache-control' content='no-cache'> 
+    <meta http-equiv='expires' content='0'> 
+    <meta http-equiv='pragma' content='no-cache'>
+
+    <link rel="shortcut icon" href="/images/favicon-32x32.png" type="image/png" />
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400&display=swap" rel="stylesheet">
+
+		{{ $title := print .Site.Title " | " .Title }}
+    {{ if .IsHome }}{{ $title = .Site.Title }}{{ end }}
+    <title>{{ $title }}</title>
+
+    <script src="/js/jquery-3.3.1.min.js"></script>
+    <script src="/js/jquery-ui-1.12.1/jquery-ui.js"></script>
+    <!-- <script type="text/javascript" src="/_pagefind/pagefind-ui.js"></script> -->
+    <script src="/js/cookies.js"></script>
+
+    {{ $style := resources.Get "sass/swindonchan.scss" | resources.ToCSS }}
+    <link rel="stylesheet" href="{{ $style.Permalink }}">
+</head>
