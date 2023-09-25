@@ -2,7 +2,7 @@
 title: home
 ---
 
-<div align="center"><img title="Shakyamuni" src="/images/head.gif" alt="" /></div>
+<div align="center"><img title="Shakyamuni" src="/images/head.gif" alt="Shakyamuni" /></div>
 <div align="center"> </div>
 <p align="center"><a href="/media/welcomePack1.rtf" target="_blank">download our welcome pack</a></p>
 <p align="center"><a href="https://hugle.uk/shop" target="_blank">Meditation CD</a></p>
