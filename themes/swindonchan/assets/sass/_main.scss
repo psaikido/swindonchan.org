@@ -21,7 +21,7 @@ body, table {
 		color: var(--text-major);
 		min-height: 75vh;
 		text-align: left;
-		padding:30px;
+		padding: 10px;
 		z-index:0;
 
 		a:visited {
@@ -34,6 +34,10 @@ body, table {
 			li {
 				line-height: 40px;
 			}
+		}
+
+		img {
+			width: 90%;
 		}
 	}
 
