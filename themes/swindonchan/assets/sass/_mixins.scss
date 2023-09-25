@@ -14,25 +14,37 @@ $breakpoints: (
 	}
 }
 
-html body {
+/*
+html body footer {
 	@include screen-width('xsmall') {
-		background-color: white;
+		&:before {
+			content: "xsmall";
+		}
 	}
 
 	@include screen-width('small') {
-		background-color: yellow;
+		&:before {
+			content: "small";
+		}
 		margin-inline: auto;
 	}
 
 	@include screen-width('medium') {
-		background-color: green;
+		&:before {
+			content: "medium";
+		}
 	}
 
 	@include screen-width('large') {
-		background-color: blue;
+		&:before {
+			content: "large";
+		}
 	}
 
 	@include screen-width('desktop') {
-		background-color: grey;
+		&:before {
+			content: "desktop";
+		}
 	}
 }
+*/

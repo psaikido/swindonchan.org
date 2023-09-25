@@ -7,17 +7,7 @@ body, table {
 }
 
 .grid-wrap {
-	background: url(/images/chan.gif) no-repeat scroll left top transparent;
-
 	header {
-		height: 86px;
-
-		h1 {
-			width: 80%;
-			margin-left: 86px;
-			margin-top: 29px;
-		}
-
 		h1 a {
 			font-size: .6em;
 			color: var(--hilight);
@@ -29,7 +19,7 @@ body, table {
 	main {
 		border: 1px solid var(--border-major);
 		color: var(--text-major);
-		height: auto;
+		min-height: 75vh;
 		text-align: left;
 		padding:30px;
 		z-index:0;
@@ -53,16 +43,13 @@ body, table {
 }
 
 footer {
-	position: fixed;
-	bottom: 0;
-	width: 100%;
-	text-align: left;
-	background: rgba(220, 220, 220, .8);
+	text-align: right;
 
-	#footer-text {
-		float: right;
-		margin-right: 20px;
-		color: var(--text-mute);
+	#footer-text,
+	#footer-text a {
+		color: var(--hilight);
+		font-style: italic;
+		font-size: .8em;
 	}
 }
 
