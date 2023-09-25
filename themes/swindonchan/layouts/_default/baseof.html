@@ -1,22 +1,30 @@
 <!DOCTYPE html>
 <html lang="en" class="">
-    {{ partial "head.html" . }}
+	<head>
+		{{ partial "head.html" . }}
+	</head>
 
-		<body>
-			<div id="outer">
-				<div id="header">
-					<div id="headerContent">{{ .Site.Params.title }}</div>
-				</div>
+	<body>
+		<div class="grid-wrap">
 
-				<div id="menu">
-					{{ partial "nav.html" . }}
-				</div>
+			<header>
+				{{ partial "header.html" . }}
+			</header>
 
-				<div id="mainContent">
-					{{ block "main" . }}
-					{{ end }}
-				</div>
-			</div>
+			<nav>
+				{{ partial "nav.html" . }}
+			</nav>
 
-		</body>
+			<main>
+				{{ block "main" . }}
+				{{ end }}
+			</main>
+
+			<footer>
+				{{ partial "footer.html" . }}
+			</footer>
+
+			<script src="/js/toggler.js"></script>
+		</div>
+	</body>
 </html>

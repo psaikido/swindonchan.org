@@ -1,74 +1,103 @@
-#menu {
-    ul {
-        opacity: 0.9;
-        margin-top: 7px;
-        width: 120px;
-    }
+nav {
+	button {
+		border: none;
+		background-color: var(--bkg-minor);
 
-    ul,
-    ul ul {
-        letter-spacing: 2px;
-        position: relative;
-        list-style-type: none;
-        padding-left: 0;
-        background-color: var(--bkg-major);
-        z-index: 2;
-    }
+		.navbar-toggler-icon {
+			display: block;
+			width: 2em;
+			height: 3px;
+			vertical-align: middle;
+			content: "";
+			background: no-repeat center center;
+			background-size: 100% 100%;
+			background-color: var(--text-major);
+			margin: 5px auto;
+		}
 
-    ul li {
-        text-align: right;
-        height: 25px;
-    }
+		@include screen-width('small') {
+			display: none;
+		}
+	}
 
-    ul ul li {
-        text-align: left;
-        padding-left: 5px;
-				margin-left: -1px;
-    }
+	ul.navbar-nav {
+		display: none;
+		opacity: 0.9;
+		margin-top: 7px;
+		margin-left: 15px;
+		width: 140px;
 
-    ul li,
-    ul ul li {
-        border: 1px solid var(--border-major);
-        display: block;
-        font-size: .9em;
-        margin-bottom: 2px;
-        margin-right: 5px;
-        padding-right: 5px;
-        text-decoration: none;
-        line-height: 25px;
-        color: var(--menu-link);
-    }
+		@include screen-width('small') {
+			display: block;
+			margin: 0;
+			height: auto;
+		}
+	}
 
-    ul li a {
-        color: var(--menu-link);
-        text-decoration: none;
-        display: block;
-    }
+	ul,
+	ul ul {
+		letter-spacing: 2px;
+		position: relative;
+		list-style-type: none;
+		padding-left: 0;
+		background-color: var(--bkg-major);
+		z-index: 2;
+	}
 
-    ul li:hover, 
-    ul li:active {
-        border-right: 4px solid var(--hilight);
-        text-decoration: underline;
-    }
+	ul li {
+		text-align: right;
+		height: 25px;
+	}
 
-    ul #selectedMenu {
-        border-right: 4px solid var(--hilight);
-    }
+	ul ul li {
+		text-align: left;
+		padding-left: 5px;
+		margin-left: -1px;
+	}
 
-    ul li ul {
-        display: none;
-        position: relative;
-        width: 320px;
-        top: -33px;
-        left: 115px;
-        z-index: 1;
-    }
+	ul li,
+	ul ul li {
+		border: 1px solid var(--border-major);
+		display: block;
+		font-size: .9em;
+		margin-bottom: 2px;
+		margin-right: 5px;
+		padding-right: 5px;
+		text-decoration: none;
+		line-height: 25px;
+		color: var(--menu-link);
+	}
 
-    ul li.sectionheader ul li {
-        margin-right: 0;
-    }
+	ul li a {
+		color: var(--menu-link);
+		text-decoration: none;
+		display: block;
+	}
 
-    ul li:hover > ul { 
-        display: block;
-    }
+	ul li:hover, 
+	ul li:active {
+		border-right: 4px solid var(--hilight);
+		text-decoration: underline;
+	}
+
+	ul #selectedMenu {
+		border-right: 4px solid var(--hilight);
+	}
+
+	ul li ul {
+		display: none;
+		position: relative;
+		width: 320px;
+		top: -33px;
+		left: 115px;
+		z-index: 1;
+	}
+
+	ul li.sectionheader ul li {
+		margin-right: 0;
+	}
+
+	ul li:hover > ul { 
+		display: block;
+	}
 }

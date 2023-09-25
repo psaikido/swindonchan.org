@@ -1,0 +1,40 @@
+body {
+	width: 100vw;
+	margin-inline: auto;
+	overflow-x: hidden;
+	margin: 0;
+	padding: 0;
+}
+
+.grid-wrap {
+	display: grid;
+	justify-content: center;
+	margin-inline: auto;
+	grid-gap: 0;
+	grid-template-columns: 1fr;
+	grid-template-rows: repeat(4, auto);
+	grid-template-areas: 
+		'header'
+		'nav'
+		'main'
+		'footer';
+
+	header {
+		grid-area: header;
+	}
+
+	nav {
+		grid-area: nav;
+	}
+
+	main {
+		grid-area: main;
+	}
+
+	footer {
+		grid-area: footer;
+	}
+}
+
+@include screen-width('medium') {
+}

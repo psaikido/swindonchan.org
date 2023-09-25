@@ -1,0 +1,38 @@
+$breakpoints: (
+	'xsmall': ( max-width: 598px ),
+	'small': ( min-width: 600px ),
+	'medium': ( min-width: 900px ),
+	'large': ( min-width: 1200px ),
+	'desktop': ( min-width: 1400px )
+) !default;
+
+@mixin screen-width($breakpoint) {
+	@if map_has_key($breakpoints, $breakpoint) {
+		@media only screen and #{inspect(map-get($breakpoints, $breakpoint))} {
+			@content;
+		}
+	}
+}
+
+html body {
+	@include screen-width('xsmall') {
+		background-color: white;
+	}
+
+	@include screen-width('small') {
+		background-color: yellow;
+		margin-inline: auto;
+	}
+
+	@include screen-width('medium') {
+		background-color: green;
+	}
+
+	@include screen-width('large') {
+		background-color: blue;
+	}
+
+	@include screen-width('desktop') {
+		background-color: grey;
+	}
+}
