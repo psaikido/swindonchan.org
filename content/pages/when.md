@@ -5,6 +5,6 @@ layout: default
 
 The group was established in 1988
 
-We meet every Monday evening for meditation
+We meet on the first and third Monday of every month. 
 
-7.30pm to around 9.15pm
+Evening meditation is from 8.30pm to around 9.15pm
